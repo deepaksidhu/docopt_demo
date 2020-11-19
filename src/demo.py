@@ -13,7 +13,14 @@ Options:
 
 from docopt import docopt
 opt = docopt(__doc__)
-print(opt)
-print(type(opt))
-print(opt["<arg4>"])
+
+def main(dicts, var4):
+    # output values
+    print(dicts)
+    print(type(dicts))
+    print(var4)
+
+
+if __name__ == "__main__":
+    main(opt, opt["<arg4>"])
 
